@@ -12,15 +12,20 @@ console.log(mailList);
 
 
 // Confrontare la mail dell'utente con la lista
-
+let find = false;
 for(i = 0; i < mailList.length; i ++){
     const element = mailList[i];
 
     if( userMail.toLowerCase() == element.toLowerCase() ){
-        console.log("La tua mail è presente");
+        find = true;
+        console.log(find);
+    }     
+}
+
+if(find == true){
+    console.log("La tua mail è presente");
         document.querySelector('p').innerHTML = "La tua mail è presente.";
-    } else {
-        console.log("La tua mail non è presente. Registrati.");
+} else {
+    console.log("La tua mail non è presente. Registrati.");
         document.querySelector('p').innerHTML = "La tua mail non è presente. Registrati.";
-    }
 }
