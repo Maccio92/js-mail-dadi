@@ -19,7 +19,7 @@ if( number1 > number2 ){
 } else if (number1 < number2){
     let print = number2;
     document.querySelector('p').innerHTML = (number2);
-    document.querySelector('h2').innerHTML = ("Ha vinto il giocatore");
+    document.querySelector('h2').innerHTML = ("Ha vinto il computer");
     console.log(number2);
 } else{
     document.querySelector('h2').innerHTML = "I lanci hanno ottenuto lo stesso risultato";
